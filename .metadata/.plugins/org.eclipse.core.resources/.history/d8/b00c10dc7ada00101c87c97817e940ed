@@ -1,0 +1,13 @@
+package ejemplos;
+
+import java.util.Arrays;
+
+public class Diapositiva17 {
+
+	public static void main(String[] args) {
+		double [] sueldos = new double [5];
+		double smi = 1234.56;
+		Arrays.fill(sueldos, 1234.56);
+	}
+
+}
