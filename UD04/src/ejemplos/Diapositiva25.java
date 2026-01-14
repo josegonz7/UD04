@@ -1,30 +1,33 @@
 package ejemplos;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class Diapositiva25 {
 
-   public static void main(String[] args) {
-      int t[] = rellenaPares(10, 100); 
-      
-      System.out.println(Arrays.toString(t)); 
-   }
+	public static void main(String[] args) {
+		
+		System.out.println(Arrays.toString(rellenaPares(10, 10)));
+		
 
-   
-   static int[] rellenaPares(int tamano, int fin) {
-      int tablaOrdenada[] = new int[tamano];
+	}
+	
+	public static int[] rellenaPares(int tam, int fin) {
+		int[] array = new int[tam];
+		Random r = new Random();
+		
+		for(int i=0; i<array.length; i++) {
+			int aleatorio;
+			do {
+				aleatorio = r.nextInt(2, fin+1);
+			}while(aleatorio%2 != 0);
+			
+			array[i] = aleatorio;
+			
+		}
+		
+		Arrays.sort(array);
+		return array;
+	}
 
-      int i = 0; 
-      
-      while (i < tablaOrdenada.length) {
-         int num = (int)(Math.random()*fin + 1);
-         if (num % 2 == 0) { 
-            tablaOrdenada[i] = num;  
-            i++; 
-         } 
-      }
-
-      Arrays.sort(tablaOrdenada);
-      return (tablaOrdenada);
-   }
 }
