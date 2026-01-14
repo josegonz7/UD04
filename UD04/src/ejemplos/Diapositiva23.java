@@ -1,4 +1,3 @@
-
 package ejemplos;
 
 public class Diapositiva23 {
@@ -12,10 +11,10 @@ public class Diapositiva23 {
 
 	}
 	
-	public static int maximo(int[] t) {
-		int maximo = 0;
+	public static int maximo(int[] array) {
+		int maximo = array[0];
 		
-		for(int elem : t) {
+		for(int elem : array) {
 			if(elem > maximo) {
 				maximo = elem;
 			}
