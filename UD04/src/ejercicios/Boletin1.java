@@ -2,7 +2,7 @@ package ejercicios;
 
 import java.util.Random;
 
-public class Tarea1 {
+public class Boletin1 {
     /*
      * generaArrayInt: Genera un array de tamaño n 
      * con números aleatorios cuyo intervalo 
@@ -56,5 +56,12 @@ public class Tarea1 {
             suma += array[i];
         }
         return suma / array.length;
+    }
+    public static double mediaArrayInt2(int[] array) {
+        double media = 0.0;
+        for (int elem : array ) {
+        	media += elem;
+        }
+        return media / array.length;
     }
 }
