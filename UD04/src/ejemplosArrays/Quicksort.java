@@ -1,4 +1,4 @@
-package ejemplos;
+package ejemplosArrays;
 
 public class Quicksort {
 	public static void main(String[] args) {
