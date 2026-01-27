@@ -1,0 +1,21 @@
+package ejemplosListas;
+
+public class Main {
+    public static void main(String[] args) {
+        Grupo grupo = new Grupo();
+        
+        Alumno alum1 = new Alumno("12345678A", "Juan Pérez", 8.5);
+        Alumno alum2 = new Alumno("87654321B", "María García", 4.2);
+        Alumno alum3 = new Alumno("11223344C", "Pedro López", 6.8);
+        Alumno alum4 = new Alumno("55667788D", "Ana Martín", 9.1);
+        Alumno alum5 = new Alumno("99887766E", "Lucía García", 3.9);
+        
+        grupo.agregarAlumno(alum1);
+        grupo.agregarAlumno(alum2);
+        grupo.agregarAlumno(alum3);
+        grupo.agregarAlumno(alum4);
+        grupo.agregarAlumno(alum5);
+        
+        grupo.mostrarAlumnos();
+    }
+}

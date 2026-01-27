@@ -18,6 +18,6 @@ public class Main {
         
         grupo.mostrarAlumnos();
 //      grupo.agregarAlumno(alum5);
-        grupo.or
+
     }
 }

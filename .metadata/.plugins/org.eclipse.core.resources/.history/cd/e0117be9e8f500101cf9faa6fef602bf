@@ -1,0 +1,46 @@
+package ejercicios;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Boletin2 {
+	public static void main(String[] args) {
+		
+		System.out.println(Arrays.toString(estaEnArrayInt(10)));
+		
+
+	}
+	
+	
+	/*
+	 * estaEnArrayInt: Dice si un número está o
+	 *  no dentro de un array.
+	 */
+	
+	 public static boolean estaEnArrayInt(int[] array) {
+		 for (int i = 0; i < array.length; i++) {
+	            int numero = 0;
+				if (array[i] == numero) {
+	                return true;
+	            }
+	        }
+	        return false;
+	       
+	       
+	 }
+	
+	
+	
+	/*
+	 * posicionEnArray: Busca un número en un array y
+	 *  devuelve la posición (el índice) en la que se
+	 *   encuentra. En caso de no estar devuelve -1.
+	 */
+	
+	
+	/*
+	 * volteaArrayInt: Le da la vuelta a un array.
+	 */
+	
+	
+}
