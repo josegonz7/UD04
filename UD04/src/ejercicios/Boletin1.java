@@ -5,7 +5,8 @@ import java.util.Random;
 
 public class Boletin1 {
 	public static void main(String[] args) {
-		System.out.println(fibonacci(3));
+		int[] array = {1,1,1,1,1,2,2,2,3,3};
+		System.out.println(calculaModaint(array));
 	}
 	
 	/*
@@ -101,7 +102,7 @@ public class Boletin1 {
 		}
 		return fibonacci;
 	}
-	public static int[] calculaModaint(int[] array) {
+	public static int calculaModaint(int[] array) {
 		int moda = array[0];
 		int repeticionesMax = 0;
 		
